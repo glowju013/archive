@@ -37,14 +37,14 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         
         <div
-            className={`md:hidden overflow-hidden transition-[max-height,opacity] duration-300 ease-out
+            className={`md:hidden overflow-hidden transition-[max-height,opacity] pt-10 duration-300 ease-out
                       ${open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
           >
-            <nav className="flex flex-col gap-4 px-5 py-4 text-header">
-              <button className="text-left">plants</button>
-              <button className="text-left">sky</button>
-              <button className="text-left">churrr</button>
-              <button className="text-left">about</button>
+            <nav className="flex flex-col gap-4 px-5 py-4 text-large text-header">
+              <button className="text-left">PLANTS</button>
+              <button className="text-left">SKY</button>
+              <button className="text-left">CHURRR</button>
+              <button className="text-left">ABOUT</button>
             </nav>
         </div>
 
