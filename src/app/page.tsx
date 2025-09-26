@@ -5,9 +5,9 @@ import { useState } from "react";
 export default function Home() {
   const [open, setOpen] = useState(false);
   return (
-    <div className="font-sans  items-center min-h-screen md:grid pl-30 pr-30 justify-items-center gap-16">
+    <div className="font-sans  items-center min-h-screen w-full md:grid md:pl-20 md:pr-20 justify-items-center gap-16">
       <header className="flex w-full items-center justify-between">
-            <p className="text-large">GLOW</p>
+            <label className="text-large flex  justify-center items-center flex-row">GLOW</label>
             <nav className="hidden md:flex flex-row gap-6 text-header">
               <h2>plants</h2>
               <h2>sky</h2>
@@ -20,7 +20,7 @@ export default function Home() {
               aria-expanded={open}
               aria-controls="mobile-menu"
               onClick={() => setOpen((v) => !v)}
-              className=" inline-flex items-center justify-center h-10 w-10  md:hidden"
+              className="flex flex-row items-center justify-center w-6 h-6 md:w-10 md:h-10  md:hidden"
             >
             {open ? (
               <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2">
