@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import SiteHeader from "../../components/SiteHeader";
 
 const dungGeunMo = localFont({
   src: "../../public/fonts/DungGeunMo.woff2",
   variable: "--font-dunggeunmo",
 })
 
-
-
 export const metadata: Metadata = {
-  title: "archive",
+  title: "GLOW",
 };
 
 export default function RootLayout({
@@ -40,9 +39,17 @@ export default function RootLayout({
         <meta name="theme-color" content="#ffffff"/>
       </head>
       <body
-        className={`${dungGeunMo.className} antialiased`}
+        className={`${dungGeunMo.className} antialiased items-center min-h-screen w-full md:grid md:pl-20 md:pr-20 justify-items-center gap-16`}
       >
-        {children}
+        <SiteHeader/>
+        <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start w-full">
+          {children}
+        </main>
+        <footer className="bottom-0 flex w-full items-center justify-between">
+       
+        <div>ⓒ 2025 LEE YUN JU</div>
+        <div>013churrr@gmail.com</div>
+      </footer>
       </body>
     </html>
   );
