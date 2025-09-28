@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function Home() {
   const [open, setOpen] = useState(false);
   return (
-    <div className="font-sans  items-center min-h-screen w-full md:grid md:pl-20 md:pr-20 justify-items-center gap-16">
+    <div className="font-sans items-center min-h-screen w-full md:grid md:pl-20 md:pr-20 justify-items-center gap-16">
       <header className="flex w-full items-center justify-between">
             <label className="text-large flex  justify-center items-center flex-row">GLOW</label>
             <nav className="hidden md:flex flex-row gap-6 text-header">
@@ -46,14 +46,12 @@ export default function Home() {
               <button className="text-left">CHURRR</button>
               <button className="text-left">ABOUT</button>
             </nav>
-        </div>
-
-        
+        </div> 
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+      <footer className="bottom-0 flex w-full items-center justify-between">
        
-        
-       
+        <div>ⓒ 2025 LEE YUN JU</div>
+        <div>013churrr@gmail.com</div>
       </footer>
     </div>
   );
