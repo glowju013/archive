@@ -1,7 +1,5 @@
+import { redirect } from "next/navigation";
+
 export default function SkyPage() {
-    return (
-        <main>
-            <h1>Sky page</h1>
-        </main>
-    )
+  redirect("/");
 }
